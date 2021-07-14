@@ -22,6 +22,12 @@ a:hover {
     transition: .3s;
 }
 
+a:active {
+    color: chocolate;
+    transition: none;
+ }
+ 
+
 @media only screen and (max-width: 480px), (orientation: portrait) {
     body, html {
         font-size: 16px;
@@ -123,7 +129,7 @@ nav li {
 .feature figure {
     margin: 25px 15px;
     text-align: center;
-    transition: .3s;
+    transition: transform .3s;
     border-radius: 20px;
 }
 
@@ -140,9 +146,14 @@ nav li {
 
 .feature figure:hover {
     transform: scale(1.1);
-    transition: .3s;
+    transition: transform .3s;
 }
 
+.feature figure:active {
+    opacity: 0.8;
+    transform: scale(0.9);
+    transition: none;
+}
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
     .feature img {
@@ -194,6 +205,12 @@ nav li {
     transition: .3s;
 }
 
+.address-card:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: none;
+}
+
 @media only screen and (max-width: 480px), (orientation: portrait) {
     .address-card {
       width: 95%;
@@ -218,6 +235,10 @@ footer h2, h5 {
  
 footer p {
     margin: 20px;
+}
+
+footer a {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
