@@ -1,0 +1,218 @@
+body, html {
+    margin: 0;
+    padding: 0;   
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+    transition: .3s;
+}
+
+a:hover {
+    color: teal;
+    transition: .3s;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    body, html {
+        font-size: 16px;
+    }
+  }
+
+
+/* -------------------------Nav bar---------------------------------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    min-height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: black;
+    flex-wrap: wrap;   
+}
+
+nav img {
+    height: 50px;
+    margin: 0px 10px;   
+}
+
+nav ul {
+    display: flex;   
+    list-style: none;    
+}
+
+nav li { 
+    text-decoration: underline;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    nav {
+      flex-direction: column;
+    }
+    nav img {
+        margin-top: 20px;
+        height: 40px
+    }
+  }
+
+
+/*---------------------------------Main-------------------------------*/
+
+main {
+   
+}
+
+/*---------------------------------Article 1-------------------------------*/
+.header {
+   background-image: url('../resources/pictures/img-mission-background.webp');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 700px;
+   max-width: 1200px;
+   display: flex; 
+   margin: 40px auto;
+   border-radius: 20px; 
+}
+
+.header section { 
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+/*---------------------------------Article 2-------------------------------*/
+
+.feature { 
+    margin: 60px auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature section {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid seashell;
+}
+
+.feature figure {
+    margin: 25px 15px;
+    text-align: center;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.feature img {
+    max-width: 300px;
+    max-height: 200px; 
+    border-radius: 20px; 
+    box-shadow: 0 5px 10px hsla(0, 0%, 100%, 0.2), 0 10px 10px hsla(0, 0%, 100%, 0.2);
+}
+
+.feature figcaption { 
+    margin-top: 10px;
+}
+
+.feature figure:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .feature img {
+      width: 95%;
+    }
+  }
+
+/*---------------------------------Article 3-------------------------------*/
+
+.location {
+    background-image: url('../resources/pictures/img-locations-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    max-width: 1200px;  
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px; 
+}
+
+.location-title {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.address-card {  
+    margin: 20px 20px;
+    width: 300px;
+    max-width: 300px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 20px; 
+    transition: .3s;
+}
+
+.address-card:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .address-card {
+      width: 95%;
+    }
+  }
+
+
+/*---------------------------------Footer-------------------------------*/
+
+footer {
+    padding: 20px 0;
+    width: 100%;
+    background-color: black;
+}
+
+footer h2, h5 {
+    text-align: center;
+}
+ 
+footer p {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    footer p {
+      text-align: center;
+    }
+  }
