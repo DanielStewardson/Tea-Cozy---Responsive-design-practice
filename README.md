@@ -14,3 +14,5 @@ When VP reduces below 480px:
 - Remove border radius on containers for better design
 - Center footer text
     
+Links:
+- Apart from internal nav links, links are dead. Just used as practice
