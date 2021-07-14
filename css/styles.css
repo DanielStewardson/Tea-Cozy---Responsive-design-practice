@@ -51,21 +51,21 @@ nav img {
 }
 
 nav ul {
+    padding: 0;
     display: flex;   
     list-style: none;    
+    background-color: aqua;
 }
 
 nav li { 
     text-decoration: underline;
     padding: 0px 10px;
+    background-color: blue;
 }
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
     nav {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
     }
     nav img {
         margin-top: 20px;
