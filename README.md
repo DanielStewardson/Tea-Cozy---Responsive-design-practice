@@ -1,4 +1,4 @@
-# Tea-Cozy---Responsive-design-practice
+# Tea Cozy - Responsive design practice
 
 CodeCademy Tea Cozy project
 
