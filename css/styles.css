@@ -53,14 +53,12 @@ nav img {
 nav ul {
     padding: 0;
     display: flex;   
-    list-style: none;    
-    background-color: aqua;
+    list-style: none;   
 }
 
 nav li { 
     text-decoration: underline;
     padding: 0px 10px;
-    background-color: blue;
 }
 
 @media only screen and (max-width: 480px), (orientation: portrait) {
